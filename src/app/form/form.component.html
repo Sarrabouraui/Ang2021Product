@@ -1,0 +1,27 @@
+<p>form works!</p>
+
+
+<form #f="ngForm">
+
+  <label>id Product</label>
+  <input type="number" name="idProduct" ngModel>
+
+  <label>.Title Product</label>
+  <input type="text" name="title" ngModel required minlength="8" #title="ngModel">
+  <div *ngIf="title.touched">
+    <div *ngIf="title.errors.required">required</div>
+
+  </div>
+
+  <label>Price Product</label>
+  <input type="number"name="price"ngModel>
+
+  <label>Quant.ity.Product</label>
+  <input type="number" name="quantity" ngModel #quantity="ngModel">
+  <div *ngIf="quantity.touched" >
+    <div *ngIf="quantity.value<=0" >positive</div>
+  </div>
+
+  <input  type="submit" name="send" (click)="showData(f.value)" >
+
+</form>

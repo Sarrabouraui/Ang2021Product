@@ -1,0 +1,48 @@
+{
+  "user": [
+    {
+      "id": 1,
+      "name": "Jerbi",
+      "surname": "Habib",
+      "age": 29,
+      "adresse": "Nkhilette"
+    },
+    {
+      "id": 2,
+      "name": "Jerbi",
+      "surname": "Habib",
+      "age": 29,
+      "adresse": "Nkhilette"
+    },
+    {
+      "id": 3,
+      "name": "Jerbi",
+      "surname": "Habib",
+      "age": 29,
+      "adresse": "Nkhilette"
+    }
+  ],
+  "product": [
+    {
+      "id": 1,
+      "name": "produit 1 ",
+      "surname": "Habib",
+      "age": 29,
+      "adresse": "Nkhilette"
+    },
+    {
+      "id": 2,
+      "name": "produit 2",
+      "surname": "Habib",
+      "age": 29,
+      "adresse": "Nkhilette"
+    },
+    {
+      "id": 3,
+      "name": "produit 3",
+      "surname": "Habib",
+      "age": 29,
+      "adresse": "Nkhilette"
+    }
+  ]
+}

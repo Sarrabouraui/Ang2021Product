@@ -1,0 +1,34 @@
+{
+  "user": [
+    {
+      "id": 1,
+      "name": "Jerbi",
+      "surname": "Habib",
+      "age": 29,
+      "adresse": "Nkhilette"
+    },
+    {
+      "id": 2,
+      "name": "Jerbi",
+      "surname": "Habib",
+      "age": 29,
+      "adresse": "Nkhilette"
+    },
+    {
+      "id": 3,
+      "name": "Jerbi",
+      "surname": "Habib",
+      "age": 29,
+      "adresse": "Nkhilette"
+    }
+  ],
+  "product": [
+    {
+      "idProduct": 1,
+      "title": "test",
+      "price": 20,
+      "quantity": 20,
+      "id": 1
+    }
+  ]
+}

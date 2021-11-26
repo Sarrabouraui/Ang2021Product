@@ -1,0 +1,30 @@
+<hr>
+
+<a [routerLink]="['/form']">go to form</a>
+
+<table  class="table table-hover border-primary">
+  <tr style="color: blue; text-align: center; text-transform: uppercase; font-weight:bold;" >
+    <td >id</td>
+    <td >Nom</td>
+    <td >Prenom</td>
+    <td >age</td>
+    <td >adresse</td>
+    <td >Action</td>
+
+  </tr>
+  <tr *ngFor="let Student of Stud"  >
+
+    <td style="text-align: center" >{{Student.id }}</td>
+    <td style="text-align: center">{{Student.name }}</td>
+    <td style="text-align: center" >{{Student.surname }}</td>
+    <td style="text-align: center" >{{Student.age }}</td>
+    <td style="text-align: center">{{Student.adresse}}</td>
+    <td style="text-align: center">
+      <input type="submit" value="like" (click)="message()" >
+      <input type="submit" value="buy">
+      <a [routerLink]="['/product/',Student.name]">lien détail</a>
+    </td>
+
+
+  </tr>
+</table>

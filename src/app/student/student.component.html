@@ -1,0 +1,90 @@
+
+<!--<div *ngFor="let Student of students">
+  <div *ngIf="Student.age >30">
+    <div [style.background-color]="color">
+      {{Student.id }}
+      {{Student.name }}
+      {{Student.surname }}
+      {{Student.age }}
+      {{Student.adresse }}
+    </div>
+  </div>
+  <div *ngIf="Student.age <30">
+    <div [style.background-color]="color1">
+      {{Student.id }}
+      {{Student.name }}
+      {{Student.surname }}
+      {{Student.age }}
+      {{Student.adresse }}
+    </div>
+  </div>
+</div>-->
+
+<!--<table class="table table-striped">
+  <tr>
+    <td>id</td>
+    <td>name</td>
+    <td>Surname</td>
+    <td>age</td>
+    <td>adresse</td>
+  </tr>
+  <tr  *ngFor="let Student of students" >
+
+        <td *ngIf="Student.age < myValue.value">{{Student.id }}</td>
+        <td *ngIf="Student.age < myValue.value">{{Student.name }}</td>
+        <td *ngIf="Student.age < myValue.value">{{Student.surname }}</td>
+        <td *ngIf="Student.age < myValue.value">{{Student.age }}</td>
+        <td *ngIf="Student.age < myValue.value">{{Student.adresse}}</td>
+
+  </tr>
+
+</table>-->
+
+<!--<div style="padding-top: 20px; margin-bottom: 100px;" class="container">
+
+  <input type="text" name="age" [(ngModel)]="age" #myValue >
+
+  <table  class="table table-hover border-primary">
+    <tr style="color: blue; text-align: center; text-transform: uppercase; font-weight:bold;" >
+      <td >id</td>
+      <td >Nom</td>
+      <td >Prenom</td>
+      <td >age</td>
+      <td >adresse</td>
+    </tr>
+    <tr  *ngFor="let Student of students" >
+
+      <td style="text-align: center" *ngIf="Student.age < myValue.value">{{Student.id }}</td>
+      <td style="text-align: center" *ngIf="Student.age < myValue.value">{{Student.name }}</td>
+      <td style="text-align: center" *ngIf="Student.age < myValue.value">{{Student.surname }}</td>
+      <td style="text-align: center" *ngIf="Student.age < myValue.value">{{Student.age }}</td>
+      <td style="text-align: center" *ngIf="Student.age < myValue.value">{{Student.adresse}}</td>
+
+    </tr>
+  </table>
+  <button [ngClass]="color=='green'?'btn btn-success':'btn btn-danger'">Enregistrer</button>
+
+</div>
+
+
+
+
+
+<div  *ngFor="let Student of students">
+  <div [ngStyle]="{'background-color':Student.age >30?'red':'pink'}" >
+    {{Student.id }}
+    {{Student.name }}
+    {{Student.surname }}
+    {{Student.age }}
+    {{Student.adresse }}
+  </div>
+</div>-->
+
+
+
+<!--<div [ngStyle]="Student.age >30?{'background-color': 'red', 'text-transform': 'uppercase'}:
+                                  {'background-color': 'green', 'text-transform': 'lowercase'}" >-->
+
+<app-child [Stud]="student" (notif)="afficherMessage($event)">
+
+</app-child>
